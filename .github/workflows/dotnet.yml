@@ -17,8 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Restore dependencies
-      run: |
-          PowerShell -ExecutionPolicy Bypass -Command "dotnet restore"
+      run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
     - name: Test
