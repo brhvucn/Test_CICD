@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: [BRHV_Labtop]
+    runs-on: [self-hosted]
 
     steps:
     - uses: actions/checkout@v3
